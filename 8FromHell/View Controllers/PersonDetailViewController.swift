@@ -31,6 +31,18 @@ class PersonDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // MARK: - Actions
+    @IBAction func backButtonTapped(_ sender: Any) {
+        // Create an instance of the main storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        // Create an instance of the view controller
+        let controller = storyboard.instantiateViewController(withIdentifier: "mainViewController")
+        // Present the main view controller
+        self.present(controller, animated: true, completion: nil)
+    }
+    
+
+    
     // MARK: - Custom Methods
     func setsUpViews() {
         
@@ -42,6 +54,8 @@ class PersonDetailViewController: UIViewController {
         hometownLabel.text = person.hometown
         bioPic1.image = UIImage(named: person.bioPics[0])
         bioPic2.image = UIImage(named: person.bioPics[1])
+        scaryPicImageView.layer.cornerRadius = scaryPicImageView.frame.height / 2
+        fearPicImageView.layer.cornerRadius = fearPicImageView.frame.height / 2
     }
     
     

@@ -15,6 +15,9 @@
 		FCDD033F23314AC40025E832 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDD033E23314AC40025E832 /* Person.swift */; };
 		FCDD034123314BBE0025E832 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDD034023314BBE0025E832 /* PersonController.swift */; };
 		FCDD0343233150AB0025E832 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDD0342233150AB0025E832 /* PersonDetailViewController.swift */; };
+		FCDD034A233168310025E832 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDD0349233168310025E832 /* StartViewController.swift */; };
+		FCDD034B233169D10025E832 /* BLOODY.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FCDD0347233162640025E832 /* BLOODY.TTF */; };
+		FCDD034C233169D50025E832 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCDD0348233162FD0025E832 /* Lato-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		FCDD033E23314AC40025E832 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		FCDD034023314BBE0025E832 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 		FCDD0342233150AB0025E832 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		FCDD0347233162640025E832 /* BLOODY.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BLOODY.TTF; sourceTree = "<group>"; };
+		FCDD0348233162FD0025E832 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		FCDD0349233168310025E832 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 		FCDD0325233144B70025E832 /* 8FromHell */ = {
 			isa = PBXGroup;
 			children = (
+				FCDD0346233162530025E832 /* Fonts */,
 				FCDD033B23314A640025E832 /* Storyboards */,
 				FCDD033A23314A5B0025E832 /* View Controllers */,
 				FCDD033D23314A770025E832 /* Model Controllers */,
@@ -85,6 +92,7 @@
 			children = (
 				FCDD0328233144B70025E832 /* ViewController.swift */,
 				FCDD0342233150AB0025E832 /* PersonDetailViewController.swift */,
+				FCDD0349233168310025E832 /* StartViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -111,6 +119,15 @@
 				FCDD034023314BBE0025E832 /* PersonController.swift */,
 			);
 			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		FCDD0346233162530025E832 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FCDD0347233162640025E832 /* BLOODY.TTF */,
+				FCDD0348233162FD0025E832 /* Lato-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +190,9 @@
 			files = (
 				FCDD0331233144B80025E832 /* LaunchScreen.storyboard in Resources */,
 				FCDD032E233144B80025E832 /* Assets.xcassets in Resources */,
+				FCDD034C233169D50025E832 /* Lato-Regular.ttf in Resources */,
 				FCDD032C233144B70025E832 /* Main.storyboard in Resources */,
+				FCDD034B233169D10025E832 /* BLOODY.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +208,7 @@
 				FCDD0329233144B70025E832 /* ViewController.swift in Sources */,
 				FCDD0343233150AB0025E832 /* PersonDetailViewController.swift in Sources */,
 				FCDD0327233144B70025E832 /* AppDelegate.swift in Sources */,
+				FCDD034A233168310025E832 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

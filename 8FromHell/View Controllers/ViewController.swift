@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var benButton: UIButton!
     
     // MARK: - Properties
-    var people: [Person] = PersonController.sharedInstance.mockData
+    var people: [Person] = PersonController.sharedInstance.people
 
 
     
@@ -32,6 +32,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setsUpUI()
+        
+        PersonController.sharedInstance.loadFromPersistentStorage()
+        
+        if people.count == 0 {
+            people = PersonController.sharedInstance.mockData
+        }
+        
+        PersonController.sharedInstance.saveToPersistentStorage()
+        
     }
 
     // MARK: - Actions
@@ -65,6 +74,31 @@ class ViewController: UIViewController {
         kevinButton.setBackgroundImage(UIImage(named: "scaryPicKevin"), for: .normal)
         nathanButton.setBackgroundImage(UIImage(named: "scaryPicNathan"), for: .normal)
         benButton.setBackgroundImage(UIImage(named: "scaryPicBen"), for: .normal)
+        cameronButton.layer.masksToBounds = false
+        cameronButton.clipsToBounds = true
+        cameronButton.layer.cornerRadius = cameronButton.bounds.size.height / 2
+        sageButton.layer.masksToBounds = false
+        sageButton.clipsToBounds = true
+        sageButton.layer.cornerRadius = sageButton.bounds.size.height / 2
+        maryannButton.layer.masksToBounds = false
+        maryannButton.clipsToBounds = true
+        maryannButton.layer.cornerRadius = maryannButton.bounds.size.height / 2
+        blakeButton.layer.masksToBounds = false
+        blakeButton.clipsToBounds = true
+        blakeButton.layer.cornerRadius = blakeButton.bounds.size.height / 2
+        josephButton.layer.masksToBounds = false
+        josephButton.clipsToBounds = true
+        josephButton.layer.cornerRadius = josephButton.bounds.size.height / 2
+        kevinButton.layer.masksToBounds = false
+        kevinButton.clipsToBounds = true
+        kevinButton.layer.cornerRadius = kevinButton.bounds.size.height / 2
+        nathanButton.layer.masksToBounds = false
+        nathanButton.clipsToBounds = true
+        nathanButton.layer.cornerRadius = nathanButton.bounds.size.height / 2
+        benButton.layer.masksToBounds = false
+        benButton.clipsToBounds = true
+        benButton.layer.cornerRadius = benButton.bounds.size.height / 2
+        
     }
 
 

@@ -15,7 +15,7 @@ class PersonController {
     var people: [Person] = []
     
     var mockData: [Person] = [Person(name: "Kevin Tanner", profilePicScary: "scaryPicKevin", fearPic: "fearPicKevin", hometown: "Valencia, CA", bioPics: ["bioPicKevin1", "bioPicKevin2"]),
-                              Person(name: "Cameron Stuart", profilePicScary: "scaryPicCameron", fearPic: "fearPicKevin", hometown: "Boca Raton, FL", bioPics: ["bioPicCameron1", "bioPicCameron2"]),
+                              Person(name: "Cameron Stuart", profilePicScary: "scaryPicCameron", fearPic: "fearPicCameron", hometown: "Boca Raton, FL", bioPics: ["bioPicCameron1", "bioPicCameron2"]),
                               Person(name: "Blake Kvarfordt", profilePicScary: "scaryPicBlake", fearPic: "fearPicBlake", hometown: "Las Vegas, NV", bioPics: ["bioPicBlake1", "bioPicBlake2"]),
                               Person(name: "Joseph, Stone", profilePicScary: "scaryPicJoseph", fearPic: "fearPicJoseph", hometown: "Colorado Springs, CO", bioPics: ["bioPicJoseph1", "bioPicJoseph2"]),
                               Person(name: "Sage Stamper ", profilePicScary: "scaryPicSage", fearPic: "fearPicSage", hometown: "Blackfoot, ID", bioPics: ["bioPicSage1", "bioPicSage2"]),
