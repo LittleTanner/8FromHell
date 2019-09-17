@@ -10,15 +10,15 @@ import UIKit
 
 class Person: Codable {
     let name: String
-    let profilePicNormal: String
     let profilePicScary: String
+    let fearPic: String
     let hometown: String
     let bioPics: [String]
     
-    init(name: String, profilePicNormal: String, profilePicScary: String, hometown: String, bioPics: [String]) {
+    init(name: String, profilePicScary: String, fearPic: String, hometown: String, bioPics: [String]) {
         self.name = name
-        self.profilePicNormal = profilePicNormal
         self.profilePicScary = profilePicScary
+        self.fearPic = fearPic
         self.hometown = hometown
         self.bioPics = bioPics
     }

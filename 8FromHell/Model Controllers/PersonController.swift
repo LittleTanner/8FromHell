@@ -14,9 +14,21 @@ class PersonController {
     
     var people: [Person] = []
     
-    var mockData: [Person] = [Person(name: "Kevin Tanner", profilePicNormal: "normalPic", profilePicScary: "scaryPic", hometown: "Valencia, CA", bioPics: ["bioPic1", "bioPic2", "bioPic3"])]
+    var mockData: [Person] = [Person(name: "Kevin Tanner", profilePicScary: "scaryPicKevin", fearPic: "fearPicKevin", hometown: "Valencia, CA", bioPics: ["bioPicKevin1", "bioPicKevin2"]),
+                              Person(name: "Cameron Stuart", profilePicScary: "scaryPicCameron", fearPic: "fearPicKevin", hometown: "Boca Raton, FL", bioPics: ["bioPicCameron1", "bioPicCameron2"]),
+                              Person(name: "Blake Kvarfordt", profilePicScary: "scaryPicBlake", fearPic: "fearPicBlake", hometown: "Las Vegas, NV", bioPics: ["bioPicBlake1", "bioPicBlake2"]),
+                              Person(name: "Joseph, Stone", profilePicScary: "scaryPicJoseph", fearPic: "fearPicJoseph", hometown: "Colorado Springs, CO", bioPics: ["bioPicJoseph1", "bioPicJoseph2"]),
+                              Person(name: "Sage Stamper ", profilePicScary: "scaryPicSage", fearPic: "fearPicSage", hometown: "Blackfoot, ID", bioPics: ["bioPicSage1", "bioPicSage2"]),
+                              Person(name: "Nathan Hampton", profilePicScary: "scaryPicNathan", fearPic: "fearPicNathan", hometown: "North Cackalacky, CAN", bioPics: ["bioPicNathan1", "bioPicNathan2"]),
+                              Person(name: "Ben Jenkins", profilePicScary: "scaryPicBen", fearPic: "fearPicBen", hometown: "Orem, UT", bioPics: ["bioPicBen1", "bioPicBen2"]),
+                              Person(name: "Maryann Vasilyeva", profilePicScary: "scaryPicMaryann", fearPic: "fearPicMaryann", hometown: "Detroit, MI", bioPics: ["bioPicMaryann1", "bioPicMaryann2"])]
+    
+    
     
     // CRUD
+    
+    
+    
     
     // Persistence
     private func fileURL() -> URL {
